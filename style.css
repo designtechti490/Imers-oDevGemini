@@ -41,7 +41,7 @@ section {
   margin-bottom: 3rem;
 }
 
-section input[type="text"] {
+section input {
   width: 30rem;
   border: none;
   padding: 1rem;
@@ -71,7 +71,7 @@ section button:hover {
 }
 
 .resultados-pesquisa {
-  width: 60rem;
+  width: 60vw;
   height: 30vh;
   overflow-y: auto;
   margin-top: 1rem;
@@ -113,14 +113,16 @@ footer {
   text-align: center;
   padding: 0;
   width: 100%;
-  position: absolute;
-  bottom: 0;
   font-size: 1rem;
   position: fixed;
   bottom: 0;
 }
 
 @media (max-width: 768px) {
+
+  body {
+    height: 150vh;
+  }
   h1 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -132,7 +134,7 @@ footer {
   }
 
   .resultados-pesquisa {
-    width: 40rem;
+    width: 50vw;
     height: 40vh;
   }
 
@@ -141,14 +143,14 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   h1 {
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
   }
 
   section input {
-    width: 17rem;
+    width: 20rem;
   }
 
   section button {
@@ -157,15 +159,11 @@ footer {
   }
 
   .resultados-pesquisa {
-    width: 90%;
+    width: 40vw;
     height: 50vh;
   }
 
   .item-resultado h2 {
     font-size: 1.1rem;
-  }
-
-  footer {
-    font-size: 0.9rem;
   }
 }
